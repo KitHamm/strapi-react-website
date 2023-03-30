@@ -6,10 +6,10 @@ import { scrollTop } from "../App";
 import Loader from "../components/Loader";
 import Error from "./Error";
 import HomePortfolio from "../components/HomePortfolio";
-import { IMAGES } from "../components/Queries";
+import { HOME_IMAGES } from "../components/Queries";
 
 export default function Home() {
-    const { loading, error, data } = useQuery(IMAGES);
+    const { loading, error, data } = useQuery(HOME_IMAGES);
     if (loading) return <Loader />;
     if (error) return <Error />;
     var content = data.home.data.attributes.main.data.attributes;

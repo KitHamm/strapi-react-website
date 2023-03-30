@@ -1,11 +1,30 @@
 import { gql } from "@apollo/client";
 
-export const IMAGES = gql`
+export const HOME_IMAGES = gql`
     query GetHome {
         home {
             data {
                 attributes {
                     main {
+                        data {
+                            attributes {
+                                url
+                                name
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+`;
+
+export const FOOTER_IMAGES = gql`
+    query GetHome {
+        home {
+            data {
+                attributes {
+                    sub {
                         data {
                             attributes {
                                 url

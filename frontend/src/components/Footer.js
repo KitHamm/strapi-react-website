@@ -3,28 +3,10 @@ import { url } from "../App";
 import ContactFooter from "../components/Contact";
 import { Link } from "react-router-dom";
 import { scrollTop } from "../App";
-
-const IMAGES = gql`
-    query GetHome {
-        home {
-            data {
-                attributes {
-                    sub {
-                        data {
-                            attributes {
-                                url
-                                name
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-`;
+import { FOOTER_IMAGES } from "./Queries";
 
 function Footer() {
-    const { loading, error, data } = useQuery(IMAGES);
+    const { loading, error, data } = useQuery(FOOTER_IMAGES);
     if (loading) return <></>;
     if (error) return <></>;
     var content = data.home.data.attributes.sub.data.attributes;

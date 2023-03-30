@@ -1,0 +1,117 @@
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1600px;
+    }
+}
+@media (max-width: 900px) {
+    .home-center {
+        height: calc(100vh - 56px) !important;
+        background-image: url("../public/me-art.png");
+        background-size: auto 220vw;
+        background-position-y: bottom;
+        margin-bottom: -3rem;
+        p,
+        h4 {
+            color: black !important;
+        }
+    }
+    .green {
+        color: rgb(0, 0, 0) !important;
+    }
+    #about {
+        height: auto !important;
+        position: relative !important;
+        z-index: 1 !important;
+    }
+    .about-img,
+    .resume-img {
+        z-index: 0 !important;
+        border-radius: 0 !important;
+    }
+    .about {
+        border-radius: 0 !important;
+        margin-bottom: 0 !important;
+        z-index: -1 !important;
+        transform: translateY(0) !important;
+        box-shadow: 0.2rem 0.2rem 1rem 0.2rem rgba(0, 0, 0, 0.4) !important;
+    }
+    .resume,
+    .resume-container {
+        border-radius: 0 !important;
+        margin-bottom: 0 !important;
+        z-index: 1 !important;
+        transform: translateY(0) !important;
+        height: fit-content !important;
+        box-shadow: 0.2rem 0.2rem 1rem 0.2rem rgba(0, 0, 0, 0.4) !important;
+    }
+    .resume-img {
+        margin-top: 56px;
+    }
+    .intro {
+        margin-top: 56px !important;
+    }
+    .intro-m {
+        margin: 0 !important;
+        height: 56px;
+    }
+
+    .navbar-brand {
+        padding-left: 1rem !important;
+    }
+    .project {
+        border-radius: 0 !important;
+        margin-bottom: 0 !important;
+        box-shadow: 0.2rem 0.2rem 1rem 0.2rem rgba(0, 0, 0, 0.4) !important;
+        z-index: 2 !important;
+    }
+    .project-card-inner {
+        opacity: 0.8 !important;
+    }
+    .project-card {
+        height: fit-content !important;
+    }
+    .single-project {
+        border-radius: 0 !important;
+        padding-right: calc(var(--bs-gutter-x) * 0.5) !important;
+        padding-left: calc(var(--bs-gutter-x) * 0.5) !important;
+        margin-bottom: -3rem !important;
+        z-index: 1 !important;
+        box-shadow: 0.2rem 0.2rem 1rem 0.2rem rgba(0, 0, 0, 0.4) !important;
+    }
+    .home-buffer {
+        height: 56px !important;
+    }
+    .mp-0 {
+        padding: 0 !important;
+    }
+    .project-img {
+        box-shadow: 0.5rem 0.5rem 0.5rem 0.1rem rgba(0, 0, 0, 0.4) !important;
+        max-width: 100% !important;
+    }
+    .foot-contact {
+        margin-bottom: 3rem;
+    }
+    .image-gallery {
+        max-width: 100% !important;
+        margin: auto;
+    }
+    .navbar-social:hover {
+        color: black !important;
+    }
+    #resume {
+        height: auto !important;
+    }
+    footer {
+        margin-top: 0 !important;
+        padding: 5rem 0 2rem 0 !important;
+        position: relative;
+        box-shadow: none !important;
+    }
+    .home-container {
+        margin-right: calc(var(--bs-gutter-x) * -0.5);
+        margin-left: calc(var(--bs-gutter-x) * -0.5);
+    }
+    .mb-neg-4 {
+        margin-bottom: -4rem;
+    }
+}

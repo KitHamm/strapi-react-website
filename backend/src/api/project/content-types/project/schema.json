@@ -1,0 +1,80 @@
+{
+  "kind": "collectionType",
+  "collectionName": "projects",
+  "info": {
+    "singularName": "project",
+    "pluralName": "projects",
+    "displayName": "Projects",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "image": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "date": {
+      "type": "date"
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "website",
+        "art",
+        "fun"
+      ]
+    },
+    "uid": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "link": {
+      "type": "string"
+    },
+    "short": {
+      "type": "text"
+    },
+    "video_url": {
+      "type": "component",
+      "repeatable": true,
+      "component": "url.video-url"
+    },
+    "where": {
+      "type": "string"
+    },
+    "tech": {
+      "type": "string"
+    },
+    "order": {
+      "type": "integer",
+      "unique": true,
+      "required": true
+    },
+    "video": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

@@ -1,0 +1,29 @@
+$animation-delay: 0.1s;
+$arrow-size: 12px;
+
+.scroll-arrow {
+    width: $arrow-size;
+    height: $arrow-size;
+    transform: rotate(45deg);
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    animation: arrow-wave 1s infinite;
+    animation-direction: alternate;
+    @for $i from 1 through 3 {
+        &:nth-child(#{$i}) {
+            animation-delay: $animation-delay * $i;
+        }
+    }
+}
+
+@keyframes arrow-wave {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}

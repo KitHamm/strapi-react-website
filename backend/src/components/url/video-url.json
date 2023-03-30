@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_url_video_urls",
+  "info": {
+    "displayName": "video_url",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "url": {
+      "type": "string"
+    }
+  }
+}
